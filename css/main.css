@@ -2,7 +2,10 @@
 body {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 	font-size: 1.0em;
-	margin: auto;
+	margin-top: 10% auto;
+    margin-bottom: 10% auto;
+    margin-right: 10% auto;
+    margin-left: 10% auto;
     width: auto;
 }
 nav ul, footer ul {
@@ -25,8 +28,7 @@ h1 {
     font-size: 2em;
 }
 p {
-    font-size: 1.0em;
-    line-height: 1.4em;
+  /*  line-height: 1.4em; */
     color: #333;
 }
 footer {
@@ -36,7 +38,6 @@ footer {
 
 ul.posts { 
     margin: 20px auto 40px; 
-    font-size: 1.0em;
 }
 
 ul.posts li {
