@@ -2,10 +2,10 @@
 body {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 	font-size: 1.0em;
-	margin-top: 20%;
-    margin-bottom: 20%;
-    margin-right: 20%;
-    margin-left: 20%;
+	margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
     width: auto;
 }
 nav ul, footer ul {
