@@ -2,10 +2,10 @@
 body {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 	font-size: 1.0em;
-	margin-top: 10% auto;
-    margin-bottom: 10% auto;
-    margin-right: 10% auto;
-    margin-left: 10% auto;
+	margin-top: 20%;
+    margin-bottom: 20%;
+    margin-right: 20%;
+    margin-left: 20%;
     width: auto;
 }
 nav ul, footer ul {
@@ -28,7 +28,6 @@ h1 {
     font-size: 2em;
 }
 p {
-  /*  line-height: 1.4em; */
     color: #333;
 }
 footer {
