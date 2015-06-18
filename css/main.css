@@ -9,7 +9,6 @@ body {
     width: auto;
 }
 nav ul, footer ul {
-    padding: 0px;
     list-style: none;
     font-weight: bold;
 }
@@ -24,9 +23,6 @@ a {
 a:hover {
     text-decoration: underline;
 }
-/* h1 {
-    font-size: 2em;
-} */
 p {
     color: #333;
 }
