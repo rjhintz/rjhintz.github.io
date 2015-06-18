@@ -29,16 +29,27 @@ body {
     margin-right: 10%;
     margin-left: 5%;
 /*  width of an element’s content area 
-	"auto" keyword lets the browser automatically calculate the width */
-    width: auto;
+	"auto" keyword lets the browser automatically calculate the width 
+	works ok with tablet & mobile screens */
+	   width: auto;
 }
 nav ul, footer ul {
+/* get rid of list bullets */
     list-style: none;
-    font-weight: bold;
+	font-weight: bold;
 }
 nav ul li, footer ul li {
+/* display list elements in one line */ 
     display: inline;
-    margin-right: 20px;
+/* Standard HTML lists have a certain amount of left-indentation. 
+The amount varies on each browser. 
+Some browsers use padding (Mozilla, Netscape, Safari) and others use margins 
+(Internet Explorer, Opera) to set the amount of indentation.
+To remove this left-indentation consistently across all browsers, 
+set both padding and margins to "0" for the "UL". */
+	margin: 0;
+	padding: 0;
+ /*   margin-right: 20px; */
 }
 a {
 /* visual effect for anchor text; see also hover behavior later */    
@@ -64,13 +75,11 @@ footer {
 ul.posts { 
     margin: 20px auto 40px; 
 }
-
-/* ul.posts li {*/
+/* ---------------------------------------------------- */
+/* General comments on CSS */
 /* list-style is the shorthand property for setting all the list properties */
 /* "list-style: none" = 
 	list-style-type: initial;
 	list-style-position: initial;
 	list-style-image: none; */
-    list-style: none;
-/* }
-*/
+
