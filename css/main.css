@@ -73,9 +73,10 @@ footer {
     font-size: .8em;
 }
 
-ul.posts { 
+/* ul.posts { 
     margin: 20px auto 40px; 
-}
+} */
+
 /* ---------------------------------------------------- */
 /* General comments on CSS */
 /* list-style is the shorthand property for setting all the list properties */
