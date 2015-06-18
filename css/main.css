@@ -1,11 +1,35 @@
-/* Style sheet for default.html */
+/* External Style Sheet
+ * Title: Main Theme
+ * Version: 1.0.0
+ * Author: Rich Hintz
+ */
+ /* General stylesheet headings */
+/* === Normalization === */
+/* === Primary layout === */
+/* === Secondary layout === */
+/* === Tertiary layout === */
+/* === Navigation === */
+/* === Text-related === */
+/* === Links and images === */
+/* === General styles === */
+/* === General classes === */
+/* === Miscellaneous === */
+/* */
+/* Scope for "body" declaration: body and body's sub-elements */
 body {
+/* prioritized list of one or more font names.
+   If a browser does not have access to the first, it uses the next. 
+   Last is generic */
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+/* "initial" size is medium; 1 em (16 pixels) for normal text */	
 	font-size: 1.0em;
+	/* margin: space around an element’s border */
 	margin-top: 5%;
     margin-bottom: 5%;
     margin-right: 10%;
     margin-left: 5%;
+/*  width of an element’s content area 
+	"auto" keyword lets the browser automatically calculate the width */
     width: auto;
 }
 nav ul, footer ul {
@@ -17,16 +41,22 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 a {
-    text-decoration: none;
+/* visual effect for anchor text; see also hover behavior later */    
+	text-decoration: none;
+/* #999 short for #999999, mid gray */
     color: #999;
 }
+/* "hover" pseudo-class */
 a:hover {
+/* visual effect for text */ 
     text-decoration: underline;
 }
 p {
+/* #333 short for #333333, darker gray */
     color: #333;
 }
 footer {
+/* #d5d5d5d5d5d5 : light gray */
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
@@ -35,6 +65,12 @@ ul.posts {
     margin: 20px auto 40px; 
 }
 
-ul.posts li {
+/* ul.posts li {*/
+/* list-style is the shorthand property for setting all the list properties */
+/* "list-style: none" = 
+	list-style-type: initial;
+	list-style-position: initial;
+	list-style-image: none; */
     list-style: none;
-}
+/* }
+*/
