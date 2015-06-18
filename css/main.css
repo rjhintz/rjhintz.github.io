@@ -19,7 +19,7 @@
 body {
 /* prioritized list of one or more font names.
    If a browser does not have access to the first, it uses the next. 
-   Last is generic */
+   Last of the 3 is generic */
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 /* "initial" size is medium; 1 em (16 pixels) for normal text */	
 	font-size: 1.0em;
@@ -72,7 +72,7 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
-
+/* Not sure why this was in the original */
 /* ul.posts { 
     margin: 20px auto 40px; 
 } */
