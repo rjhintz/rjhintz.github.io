@@ -39,7 +39,7 @@ nav ul, footer ul {
 	font-weight: bold;
 }
 nav ul li, footer ul li {
-/* display list elements in one line */ 
+/* display list elements for nav and footer in one line */ 
     display: inline;
 /* Standard HTML lists have a certain amount of left-indentation. 
 The amount varies on each browser. 
