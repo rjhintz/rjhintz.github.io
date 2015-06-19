@@ -4,6 +4,7 @@
 ###Create Basic Web Page
 ####Create Repository
 Create repo(ository)
+
 1. Logon to Github 
 2. Create project repo as `<username>.github.io`, replacing `<username`
 with your Github username. Initialize repo with a README
