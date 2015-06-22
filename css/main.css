@@ -1,27 +1,47 @@
 /* External Style Sheet
  * Title: Main Theme
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Rich Hintz
 */
 /* General stylesheet headings */
 /* === Normalization === */
+/* from h5bp */
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
 /* === Primary layout === */
 /* === Secondary layout === */
 /* === Tertiary layout === */
 /* === Navigation === */
+/* Standard HTML lists have a certain amount of left-indentation. 
+The amount varies on each browser. 
+Some browsers use padding (Mozilla, Netscape, Safari) and others use margins 
+(Internet Explorer, Opera) to set the amount of indentation.
+To remove this left-indentation consistently across all browsers, 
+set both padding and margins to "0" for the "UL". */
+nav ul, footer ul {
+/* get rid of list graphic bullets since the list is to be shown as a single line of "bullet" elements */
+    list-style: none;
+	font-weight: bold;
+}
+nav ul li, footer ul li {
+/* display list elements, "bullets," for nav and footer in one line */ 
+    display: inline;
+	margin: 0;
+	padding: 0;
+/* spacing between list elements on single line */
+    margin-right: 20px;
+}
 /* === Text-related === */
-/* === Links and images === */
-/* === General styles === */
-/* === General classes === */
-/* === Miscellaneous === */
-/* */
 /* Scope for "body" declaration: body and body's sub-elements */
 body {
 /* prioritized list of one or more font names.
    If a browser does not have access to the first, it uses the next. 
-   Last of the 3 is generic */
+   Last of the 3 is generic so should always be valid*/
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-/* "initial" size is medium; 1 em (16 pixels) for normal text */	
+/* "initial" size is medium; 1 em (16 pixels) for normal text. Value here is to allow easy changing */	
 	font-size: 1.0em;
 	/* margin: space around an element’s border */
 	margin-top: 5%;
@@ -29,29 +49,11 @@ body {
     margin-right: 10%;
     margin-left: 5%;
 /*  width of an element’s content area 
-	"auto" keyword lets the browser automatically calculate the width 
+	"auto" keyword lets the browser automatically calculate the width &
 	works ok with tablet & mobile screens */
 	   width: auto;
 }
-nav ul, footer ul {
-/* get rid of list bullets */
-    list-style: none;
-	font-weight: bold;
-}
-nav ul li, footer ul li {
-/* display list elements for nav and footer in one line */ 
-    display: inline;
-/* Standard HTML lists have a certain amount of left-indentation. 
-The amount varies on each browser. 
-Some browsers use padding (Mozilla, Netscape, Safari) and others use margins 
-(Internet Explorer, Opera) to set the amount of indentation.
-To remove this left-indentation consistently across all browsers, 
-set both padding and margins to "0" for the "UL". */
-	margin: 0;
-	padding: 0;
-/* spacing between list elements on single line */
-    margin-right: 20px;
-}
+
 a {
 /* visual effect for anchor text; see also hover behavior later */    
 	text-decoration: none;
@@ -67,11 +69,18 @@ p {
 /* #333 short for #333333, darker gray */
     color: #333;
 }
+/* === Links and images === */
+/* === General styles === */
+/* === General classes === */
+/* === Miscellaneous === */
 footer {
 /* #d5d5d5d5d5d5 : light gray */
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
+/* */
+
+
 /* Not sure why this was in the original */
 /* ul.posts { 
     margin: 20px auto 40px; 
