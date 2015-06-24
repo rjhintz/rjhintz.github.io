@@ -257,8 +257,7 @@ have the image be available as a link.
 Optional: blur edges of photo.
 [Quick Picture Tools](http://www.quickpicturetools.com/en/blur_edges/) 
 is ok for this.
-######
-Credit
+######Credit
 Much of this material is adapted from
 [Creating and Hosting a Personal Site on GitHub]
 (http://jmcglone.com/guides/github-pages/) 

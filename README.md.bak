@@ -204,9 +204,45 @@ Also:
 * Create file inside it called `default.html`. 
 
 ####Update Index File
-Update `index.html` to reflect use of Jekyll layout:
+Update `index.html` to reflect use of Jekyll layout.
+File below as personalized with photo positioned on right.
+Border explictly shown as 0pt none since some current browsers will
+otherwise include a border.
 ```
- 
+---
+layout: default
+title: Rich Hintz
+---
+<div class="blurb">
+	<p>
+		<a href="http://imgur.com/DzYcDag">
+		<img src="http://i.imgur.com/DzYcDag.jpg" 
+		title="source: imgur.com";
+		style="border:0pt none;
+		clear:right;
+		float:right">
+		</a>
+	</p>
+	<h3>Rich Hintz</h3>
+	<p>Generally known as <em>rjhintz</em> on the network.
+	<p>Things I'm interested in lately can be found in my Twitter feed and occasionally in these blogs:
+		<ul>
+			<li><a href="http://postconsumerwaste.blogspot.com">post consumer waste</a>, non-technology related </li>
+			<li><a href="http://nextordermachine.blogspot.com">next order machine</a>, enterprise class technology </li>
+			<li><a href="http://fiberinfrastructure.blogspot.com">fiber infrastructure</a>, for a focus on fiber optic infrastructure</li>
+		</ul>
+	</p>
+	<p>Also, just like everyone else, I have the usual:
+		<ul>
+			<li><a href="http://www.flickr.com/photos/rjhintz/">flickr, </a>
+				<a href="https://instagram.com/rjhintz/">Instagram, </a>
+				and <a href="http://www.panoramio.com/user/186735">Panoramio </a>photos<br></li>
+			<li><a href="http://www.youtube.com/rjhintz">YouTube videos</a></li>
+			<li>and, somewhat less usual, interesting "<a href="http://www.wikiloc.com/wikiloc/user.do?name=rjhintz">tracks</a>" of journeys</li>
+		</ul>
+	</p>
+</div><!-- /.blurb -->
+``` 
 ###Optional
 You can add a photo to your site fairly easily.
 ####Set Up an Image Hosting Site
@@ -218,9 +254,11 @@ I used an image sized at 243x162 pixels, which works ok.
 Note that you don't have to "publish" to the wider Imgur community to
 have the image be available as a link.
 ####
-
-
-
+Optional: blur edges of photo.
+[Quick Picture Tools](http://www.quickpicturetools.com/en/blur_edges/) 
+is ok for this.
+######
+Credit
 Much of this material is adapted from
 [Creating and Hosting a Personal Site on GitHub]
 (http://jmcglone.com/guides/github-pages/) 
