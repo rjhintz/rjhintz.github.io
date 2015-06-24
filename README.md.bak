@@ -16,8 +16,9 @@ with your Github username.
 
 ####Create Top Level Index Page
 
-1. Create an `index.html` page, clicking the plus icon next to your repository
-name and typing the file name directly in the input box that appears.
+1. Create an `index.html` page, clicking the plus icon next
+to your repository name and typing the file name directly 
+in the input box that appears.
 2. Use text editor to create this markup:
 ```html
 <!doctype html>
@@ -43,7 +44,8 @@ name and typing the file name directly in the input box that appears.
 		<footer>
     		<ul>
         		<li><a href="mailto:youremail@gmail.com">email</a></li>
-        		<li><a href="https://github.com/<Githubusername>">github.com/,Githubusername</a></li>
+        		<li><a href="https://github.com/<Githubusername>
+				">github.com/,Githubusername</a></li>
 			</ul>
 		</footer>
 	</body>
@@ -57,12 +59,15 @@ a description of your changes and a button to commit the file.
 In a couple of minutes, perhaps less, the new web page will be ready at
 `<username>.github.io`
 ###Style Web Page
-Optional: To "style" the content, standard practice is to use a CSS style sheet.
+Optional: To "style" the content, standard practice is 
+to use a CSS style sheet.
 ####Create CSS Stylesheet
 Go to your repository home and create a new file named `css/main.css`. 
-The `css/` before the filename will automatically create a subdirectory called `css`.
+The `css/` before the filename will automatically create 
+a subdirectory called `css`.
 
-Place the following into `main.css`. Note that currently this content includes many comments, some 
+Place the following into `main.css`. Note that currently this content 
+includes many comments, some 
 associated with currently empty associated content.
 ```css
 /* External Style Sheet
@@ -110,8 +115,9 @@ nav ul li, footer ul li {
     display: inline;
 /* Standard HTML lists have a certain amount of left-indentation. 
 The amount varies on each browser. 
-Some browsers use padding (Mozilla, Netscape, Safari) and others use margins 
-(Internet Explorer, Opera) to set the amount of indentation.
+Some browsers use padding (Mozilla, Netscape, Safari) and 
+others use margins (Internet Explorer, Opera) to 
+set the amount of indentation.
 To remove this left-indentation consistently across all browsers, 
 set both padding and margins to "0" for the "UL". */
 	margin: 0;
@@ -142,7 +148,8 @@ footer {
 
 /* ---------------------------------------------------- */
 /* General comments on CSS */
-/* list-style is the shorthand property for setting all the list properties */
+/* list-style is the shorthand property for setting 
+all the list properties */
 /* "list-style: none" = 
 	list-style-type: initial;
 	list-style-position: initial;
@@ -150,12 +157,14 @@ footer {
 
 ```
 ####Commit Stylesheet
-Commit the `main.sss` stylesheet with an appropriate comment, such as "Initial".
+Commit the `main.sss` stylesheet with an appropriate comment, 
+such as "Initial".
 ####Link to the Stylesheet In the Index Page
 Link to your CSS file inside your HTML document's `<head>`.
 Go back to `index.html` and select the "Edit".
 
-Add this text between `<head>` and `</head>` to create a link to `main.css` :
+Add this text between `<head>` and `</head>` to create a 
+link to `main.css` :
 ```html
 !-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -163,15 +172,18 @@ Add this text between `<head>` and `</head>` to create a link to `main.css` :
 ###Add Use of Jekyll Static Site Generator
 Jekyll is a static web site generator that uses templates. 
 Instead of repeating the same navigation markup on every page, 
-which would have to edited on every page if content is added or removed or if there's a change to 
+which would have to edited on every page if content is added or removed 
+or if there's a change to 
 the location of navigation item, 
 a Jekyll layout can be called that will be used on all pages. 
 ###Setup for Jekyll
 ####Create Setup Files
-Create a `.gitignore` file. This file tells Git to ignore the `_site` directory 
+Create a `.gitignore` file. This file tells Git to ignore the 
+`_site` directory 
 that Jekyll automatically generates each time you commit. 
-Because this directory and all the files inside are written each time you commit, 
-you do not want this directory under version control.
+Because this directory and all the files inside are written 
+each time you commit, you do not want this directory under 
+version control.
 
 Add this line to the `.gitignore` file:
 ```
@@ -198,8 +210,17 @@ Update `index.html` to reflect use of Jekyll layout:
 ###Optional
 You can add a photo to your site fairly easily.
 ####Set Up an Image Hosting Site
-[Imgur](www.imgur.com) is as good as any for low volumes, say <250, of images.
+[Imgur](www.imgur.com) is as good as any for low volumes, say <250,
+of images.
+
+I used an image sized at 243x162 pixels, which works ok.
+
+Note that you don't have to "publish" to the wider Imgur community to
+have the image be available as a link.
 ####
 
+
+
 Much of this material is adapted from
-[Creating and Hosting a Personal Site on GitHub](http://jmcglone.com/guides/github-pages/) 
+[Creating and Hosting a Personal Site on GitHub]
+(http://jmcglone.com/guides/github-pages/) 
