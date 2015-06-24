@@ -5,9 +5,10 @@ Personal web page fun
 ####Create Repository
 Create repo(sitory)
 
-1. Choose a useful Github "handle." 
-2. Creat Github account or Logon to Github 
-2. Create project repo as `<username>.github.io`, replacing `<username>`
+1. Choose a useful Github "handle." Consider
+using your Twitter handle.
+2. Create Github account or Logon to Github 
+3. Create project repo as `<username>.github.io`, replacing `<username>`
 with your Github username. 
 
 ####Initialize Repository
@@ -205,9 +206,11 @@ Also:
 
 ####Update Index File
 Update `index.html` to reflect use of Jekyll layout.
-File below as personalized with photo positioned on right.
-Border explictly shown as 0pt none since some current browsers will
-otherwise include a border.
+
+The file below is personalized with a photo image positioned on 
+the right.
+The border is explictly shown as 0pt none since 
+some current browsers will otherwise include a border.
 ```
 ---
 layout: default
