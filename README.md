@@ -7,7 +7,7 @@ Create repo(sitory)
 
 1. Choose a useful Github "handle." Consider
 using your Twitter handle.
-2. Create Github account or Logon to Github 
+2. Create Github account, if necessary, then Logon to Github 
 3. Create project repo as `<username>.github.io`, replacing `<username>`
 with your Github username. 
 
@@ -20,7 +20,7 @@ with your Github username.
 1. Create an `index.html` page, clicking the plus icon next
 to your repository name and typing the file name directly 
 in the input box that appears.
-2. Use text editor to create this markup:
+2. Use a text editor to create this HTML "markup":
 ```html
 <!doctype html>
 <html>
@@ -52,9 +52,13 @@ in the input box that appears.
 	</body>
 </html>
 ```
+######Note
+[notepad-plus-plus](https://notepad-plus-plus.org/) is worth 
+considering as an editor, especially for Windows users.
+
 ####Commit Index Page
-At the bottom of the page, there is a text input area to add 
-a description of your changes and a button to commit the file.
+At the bottom of the page, use the text input area to add 
+a description of your changes. Then use the button to commit the file.
 
 ####View Index Page
 In a couple of minutes, perhaps less, the new web page will be ready at
@@ -203,7 +207,41 @@ Also:
 
 * Make a `_layouts` directory
 * Create file inside it called `default.html`. 
-
+```
+<!doctype html>
+<!-- advanced elements from h5bp_index.html -->
+	<html>
+		<head>
+			<meta charset=utf-8>
+			<meta http-equiv="x-ua-compatible" content="ie=edge">
+			<title>{{ page.title }}</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<!-- link to external stylesheet(s) -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+	<!--	        	<li><a href="/about">About</a></li> -->
+	<!--        		<li><a href="/blog">Blog</a></li>   -->
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			{{ content }}
+			
+			</div><!-- /.container -->		
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:rjhintz@gmail.com">email</a></li>
+					<li><a href="https://twitter.com/rjhintz">twitter</a></li>
+	        		<li><a href="https://github.com/rjhintz">github.com/rjhintz</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
+```
 ####Update Index File
 Update `index.html` to reflect use of Jekyll layout.
 
