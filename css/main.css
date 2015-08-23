@@ -7,9 +7,9 @@
 /* === Normalization === */
 /* from h5bp */
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
 /* === Primary layout === */
 /* === Secondary layout === */
@@ -23,16 +23,16 @@ To remove this left-indentation consistently across all browsers,
 set both padding and margins to "0" for the "UL". */
 nav ul, footer ul {
 /* get rid of list graphic bullets since the list is to be shown as a single line of "bullet" elements */
-    list-style: none;
+  list-style: none;
 	font-weight: bold;
 }
 nav ul li, footer ul li {
 /* display list elements, "bullets," for nav and footer in one line */ 
-    display: inline;
+  display: inline;
 	margin: 0;
 	padding: 0;
 /* spacing between list elements on single line */
-    margin-right: 20px;
+  margin-right: 20px;
 }
 /* === Text-related === */
 /* Scope for "body" declaration: body and body's sub-elements */
@@ -40,34 +40,34 @@ body {
 /* prioritized list of one or more font names.
    If a browser does not have access to the first, it uses the next. 
    Last of the 3 is generic so should always be valid*/
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  font-family:'Helvetica', 'Arial', 'Sans-Serif';
 /* "initial" size is medium; 1 em (16 pixels) for normal text. Value here is to allow easy changing */	
 	font-size: 1.0em;
 	/* margin: space around an element’s border */
 	margin-top: 5%;
-    margin-bottom: 5%;
-    margin-right: 10%;
-    margin-left: 5%;
+  margin-bottom: 5%;
+  margin-right: 10%;
+  margin-left: 5%;
 /*  width of an element’s content area 
 	"auto" keyword lets the browser automatically calculate the width &
 	works ok with tablet & mobile screens */
-	   width: auto;
+	width: auto;
 }
 
 a {
 /* visual effect for anchor text; see also hover behavior later */    
 	text-decoration: none;
 /* #999 short for #999999, mid gray */
-    color: #999;
+  color: #999;
 }
 /* "hover" pseudo-class */
 a:hover {
 /* visual effect for text */ 
-    text-decoration: underline;
+  text-decoration: underline;
 }
 p {
 /* #333 short for #333333, darker gray */
-    color: #333;
+  color: #333;
 }
 /* === Links and images === */
 /* === General styles === */
@@ -75,8 +75,8 @@ p {
 /* === Miscellaneous === */
 footer {
 /* #d5d5d5d5d5d5 : light gray */
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+  border-top: 1px solid #d5d5d5;
+  font-size: .8em;
 }
 /* */
 
@@ -93,4 +93,3 @@ footer {
 	list-style-type: initial;
 	list-style-position: initial;
 	list-style-image: none; */
-
